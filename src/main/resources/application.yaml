@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  application:
+    name: teca-facturacion
+
+
+springdoc:
+  api-docs:
+    path: /swagger-doc/v3/api-docs
+    groups:
+      enabled: true
+  swagger-ui:
+    path: /swagger-doc/swagger-ui.html
